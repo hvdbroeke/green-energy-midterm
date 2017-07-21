@@ -1,0 +1,326 @@
+/* dark purplish-grey: #423139
+    light pinkish-grey: #DAD6DE 
+    light blueish-grey: #DCE4F5
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+body {
+    font-family: "Raleway", arial, sans-serif;
+    background-color: #DAD6DE;
+    color: #423139;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: all;
+}
+
+
+/*masthead*/
+
+.slideshow {
+    margin: 0;
+}
+
+.box {
+    max-width: 100rem;
+    display: block;
+}
+
+.box h1 {
+    text-align: center;
+    font-family: "Playfair Display", "Times New Roman", sans-serif;
+}
+
+.box h1 span {
+    font-size: 3rem;
+}
+
+.mh-image {
+    transition: cubic-bezier (0.78, 0.19, 0.43, 0.91);
+    transition-duration: 1000ms;
+    margin: 0;
+}
+
+.mh-image figure {
+    margin-top: 0;
+    position: relative;
+}
+
+.mh-image figure img {
+    width: 100%;
+}
+
+.mh-image figure figcaption {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    color: #fff;
+}
+
+
+/*icons*/
+
+.icons ul li {
+    display: inline-block;
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: calc(33.33% - 1rem + 0.33rem);
+    text-align: center;
+}
+
+.icons ul li:last-child {
+    margin: 0 0 1rem 0;
+}
+
+
+/*nav*/
+
+.nav {
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    text-align: center;
+    background-color: #423139;
+    color: #DCE4F5;
+}
+
+.nav ul li:hover {
+    cursor: pointer;
+}
+
+
+/*dynamic content*/
+
+a,
+.fa-plug,
+.fa-home,
+.fa-building:hover {
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #423139;
+    color: #DCE4F5;
+}
+
+footer .company {
+    text-align: center;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+footer .social a {
+    color: #DCE4F5;
+    margin: 0 2%;
+}
+
+@media only screen and (max-width: 35rem) {
+    body {
+        font-size: 0.618rem;
+    }
+    /*masthead*/
+    .mh-image figure img {
+        height: 250px;
+        width: 100%;
+    }
+    /*navigation*/
+    .nav {
+        width: 100%;
+    }
+    .nav ul {
+        display: inline;
+        margin-top: 2.5%;
+        margin-bottom;
+        2.5%;
+    }
+    .nav ul li {
+        display: block;
+        padding: 2.5% 0;
+        margin: 0.5% 0;
+    }
+    /*icons*/
+    .icons {
+        display: block;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .icons li i {
+        font-size: 1.5rem;
+    }
+    /*dynamic content container*/
+    .container {
+        display: block;
+        margin: 2.5% 0;
+    }
+    .container h2 {
+        display: block;
+        text-align: center;
+    }
+    .container p {
+        display: block;
+        padding: 2.5%;
+        text-align: left;
+    }
+    .container img {
+        max-width: 100%;
+    }
+    /*footer*/
+    footer .company {
+        padding: 5% 2.5%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 60rem) and (min-width: 35rem) {
+    body {
+        font-size: 1rem;
+    }
+    /*masthead*/
+    .mh-image figure img {
+        height: 500px;
+    }
+    .box h1 span {
+        font-size: 4rem;
+    }
+    /*navigation*/
+    .nav {
+        width: 100%;
+    }
+    .nav ul {
+        display: block;
+        margin-top: 2.5%;
+        margin-bottom;
+        2.5%;
+    }
+    .nav ul li {
+        display: inline-block;
+        padding: 2rem 0;
+        margin: 0 0 1rem 0;
+        width: calc(33.33% - 1rem + 0.33rem);
+    }
+    /*icons*/
+    .icons {
+        display: block;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .icons ul li i {
+        font-size: 2.5rem;
+    }
+    /*dynamic content container*/
+    .container {
+        margin: 5% 0;
+        padding: 2.5% 0 0 5%;
+        overflow: auto;
+    }
+    .container h2 {
+        display: block;
+        text-align: center;
+        margin: 5% 0;
+    }
+    .container p {
+        display: inline;
+        padding: 0 2.5%;
+        height: auto;
+        width: 45%;
+        text-align: left;
+        float: right;
+    }
+    .container img {
+        display: inline;
+        max-width: 50%;
+    }
+    /*footer*/
+    footer {
+        display: block;
+        margin: 2.5% 0 0 0;
+    }
+    footer .company {
+        display: block;
+        padding: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    body {
+        font-size: 1.618rem;
+    }
+    /*masthead*/
+    .mh-image figure img {
+        height: 750px;
+    }
+    .box h1 span {
+        font-size: 5rem;
+    }
+    /*navigation*/
+    .nav {
+        width: 100%;
+    }
+    .nav ul {
+        display: block;
+        margin-top: 2.5%;
+        margin-bottom;
+        2.5%;
+    }
+    .nav ul li {
+        display: inline-block;
+        padding: 2rem 0;
+        margin: 0 0 1rem 0;
+        width: calc(33.33% - 1rem + 0.33rem);
+    }
+    /*icons*/
+    .icons {
+        display: block;
+        list-style: none;
+        max-width: 100%;
+    }
+    .icons ul li i {
+        font-size: 3rem;
+    }
+    /*dynamic content container*/
+    .container {
+        margin: 5% 0;
+        padding: 2.5% 0 0 5%;
+        overflow: auto;
+    }
+    .container h2 {
+        display: block;
+        text-align: center;
+        margin: 5% 0;
+    }
+    .container p {
+        display: inline;
+        padding: 0 2.5%;
+        height: auto;
+        width: 65%;
+        text-align: left;
+        float: right;
+    }
+    .container img {
+        display: inline;
+        max-width: 30%;
+    }
+    /*footer*/
+    footer .company p {
+        text-align: left;
+        padding: 1rem;
+    }
+    footer .social {
+        text-align: left;
+    }
+}
